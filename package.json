@@ -15,7 +15,6 @@
     "LICENSE"
   ],
   "scripts": {
-    "prepublishOnly": "npm run build",
     "lint": "node ./scripts/verify-names.js",
     "prebuild": "rimraf ./{solid,outline,tinted} ./{vue,react}/{solid,outline,tinted} ./optimized/{solid,outline,tinted}",
     "build": "npm run build-outline && npm run build-solid && npm run build-tinted && npm run build-react && npm run build-vue",
