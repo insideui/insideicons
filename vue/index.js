@@ -4,13 +4,13 @@ module.exports = new Proxy(
   {},
   {
     get: (_, property) => {
-      if (property === '__esModule') {
-        return {}
+      if (property === "__esModule") {
+        return {};
       }
 
       throw new Error(
-        `Importing from \`@heroicons/vue\` directly is not supported. Please import from either \`@heroicons/vue/16/solid\`, \`@heroicons/vue/20/solid\`, \`@heroicons/vue/24/solid\`, or \`@heroicons/vue/24/outline\` instead.`
-      )
+        `Importing from \`@insideicons/vue\` directly is not supported. Please import from either \`@insideicons/vue/icons/solid\`, \`@insideicons/vue/icons/outline\`, or \`@insideicons/vue/icons/tinted\` instead.`
+      );
     },
   }
-)
+);

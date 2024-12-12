@@ -4,13 +4,13 @@ module.exports = new Proxy(
   {},
   {
     get: (_, property) => {
-      if (property === '__esModule') {
-        return {}
+      if (property === "__esModule") {
+        return {};
       }
 
       throw new Error(
-        `Importing from \`@heroicons/react\` directly is not supported. Please import from either \`@heroicons/react/16/solid\`, \`@heroicons/react/20/solid\`, \`@heroicons/react/24/solid\`, or \`@heroicons/react/24/outline\` instead.`
-      )
+        `Importing from \`@insideicons/react\` directly is not supported. Please import from either \`@insideicons/react/icons/solid\`, \`@insideicons/react/icons/outline\`, or \`@insideicons/react/icons/tinted\` instead.`
+      );
     },
   }
-)
+);
